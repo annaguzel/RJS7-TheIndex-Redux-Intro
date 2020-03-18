@@ -27,6 +27,12 @@ export default (state = initialState, action) => {
         newAuthorId: state.newAuthorId + 1
       };
 
+    case "DELETE_AUTHOR":
+      return{
+        ...state,
+        authors : state.authors.filter(author => author.id !== action.payload.id)     
+       };
+
     default:
       return state;
   }

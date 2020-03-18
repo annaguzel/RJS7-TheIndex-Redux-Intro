@@ -4,3 +4,11 @@ const ADD_AUTHOR="ADD_AUTHOR";
      type: ADD_AUTHOR
      };
  };
+ const DELETE_AUTHOR="DELETE_AUTHOR";
+ export const deleteAuthor = author =>{
+     return{
+     type: DELETE_AUTHOR,
+     payload: author
+     };
+ };
+
